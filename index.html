@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MyBizCare</title>
+    <title>Privacy Policy - MyBizCare Business Management Application</title>
     <style>
+        /* Professional styling */
         * {
             margin: 0;
             padding: 0;
@@ -12,134 +13,245 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #f8f9fa;
         }
         
         .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+        .privacy-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        .privacy-header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
             margin-bottom: 30px;
         }
         
         h2 {
             color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 35px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.3rem;
             margin: 25px 0 15px 0;
-            padding-top: 10px;
-            border-top: 1px solid #eee;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            color: #555;
         }
         
         ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
+            margin: 15px 0 25px 30px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            color: #555;
+            position: relative;
         }
         
-        .last-updated {
-            background: #f8f9fa;
-            padding: 15px;
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .highlight-box {
+            background: #f8fafc;
             border-left: 4px solid #3498db;
-            margin-bottom: 30px;
-        }
-        
-        .contact-info {
-            background: #e8f4fc;
             padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
         }
         
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
+        .contact-section {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        
+        .contact-section h3 {
+            color: white;
+            border-bottom: none;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
             }
             
-            .container {
-                padding: 20px;
+            .content-card {
+                padding: 30px 20px;
             }
+            
+            .privacy-header {
+                padding: 40px 20px;
+            }
+            
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .effective-date {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
+    <div class="privacy-header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">MyBizCare Business Management Application</div>
+        </div>
+    </div>
+    
     <div class="container">
-        <h1>Privacy Policy for MyBizCare</h1>
-        
-        <div class="last-updated">
-            <strong>📅 Last Updated:</strong> November 2024<br>
-            <strong>📱 App Version:</strong> 1.0.0+
+        <div class="content-card">
+            <div class="effective-date">
+                <strong>Effective Date:</strong> November 2024<br>
+                <strong>Last Updated:</strong> November 2024
+            </div>
+            
+            <h2>Introduction</h2>
+            <p>MyBizCare ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services.</p>
+            
+            <h2>Camera Permission Usage</h2>
+            <p>The MyBizCare application requests camera access exclusively for legitimate business management purposes:</p>
+            <ul>
+                <li>Document digitization and archiving of business receipts and invoices</li>
+                <li>Product and inventory photography for catalog management</li>
+                <li>Business profile and establishment photography</li>
+                <li>Visual documentation of business operations and transactions</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Camera access is optional. You may deny camera permissions and still use core application features. You can manage permissions through your device settings at any time.</p>
+            </div>
+            
+            <h2>Information Collection and Usage</h2>
+            
+            <h3>Data We Collect</h3>
+            <ul>
+                <li><strong>Camera Data:</strong> Photographs taken within the application for business documentation</li>
+                <li><strong>Business Information:</strong> Company details, transaction records, and operational data you provide</li>
+                <li><strong>Device Information:</strong> Technical details about your device for optimization purposes</li>
+                <li><strong>Usage Data:</strong> Application interaction patterns for service improvement</li>
+            </ul>
+            
+            <h3>How We Use Your Information</h3>
+            <ul>
+                <li>To provide and maintain our business management services</li>
+                <li>To process and organize your business documentation</li>
+                <li>To improve application performance and user experience</li>
+                <li>To communicate important updates regarding our services</li>
+                <li>To ensure compliance with applicable laws and regulations</li>
+            </ul>
+            
+            <h2>Data Security and Storage</h2>
+            <p>We implement comprehensive security measures to protect your information:</p>
+            <ul>
+                <li>End-to-end encryption for all data transmissions</li>
+                <li>Secure server infrastructure with regular security audits</li>
+                <li>Access controls and authentication protocols</li>
+                <li>Regular data backup and disaster recovery procedures</li>
+                <li>Industry-standard security protocols and compliance measures</li>
+            </ul>
+            
+            <h2>Data Retention and Deletion</h2>
+            <p>We retain your business data only as long as necessary for legitimate business purposes. You may request deletion of your data at any time, subject to legal and contractual obligations.</p>
+            
+            <h2>Third-Party Disclosure</h2>
+            <p>We do not sell, trade, or otherwise transfer your personally identifiable information to external parties, except:</p>
+            <ul>
+                <li>To trusted service providers who assist in our operations</li>
+                <li>When required by law or to protect our legal rights</li>
+                <li>With your explicit consent for specific purposes</li>
+            </ul>
+            
+            <h2>Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction of inaccurate or incomplete data</li>
+                <li>Request deletion of your personal information</li>
+                <li>Object to or restrict certain data processing activities</li>
+                <li>Withdraw consent at any time, without affecting prior processing</li>
+                <li>Export your business data in a structured format</li>
+            </ul>
+            
+            <h2>Updates to This Policy</h2>
+            <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. Significant changes will be communicated through application notifications. We encourage regular review of this policy.</p>
+            
+            <div class="contact-section">
+                <h3>Contact Information</h3>
+                <p>For privacy-related inquiries, data access requests, or concerns regarding this Privacy Policy:</p>
+                <p><strong>Email:</strong> mybizcare@gmail.com</p>
+                <p><strong>Response Time:</strong> We endeavor to respond to all legitimate requests within 48 hours.</p>
+                <p><em>Please include "Privacy Policy Inquiry" in your email subject line for prompt attention.</em></p>
+            </div>
         </div>
         
-        <h2>📸 1. Camera Permission</h2>
-        <p>MyBizCare requests camera permission to provide the following features:</p>
-        <ul>
-            <li>✅ <strong>Document Capture:</strong> Take photos of business documents, invoices, and receipts</li>
-            <li>✅ <strong>Product Photos:</strong> Capture images of products or services</li>
-            <li>✅ <strong>Profile Pictures:</strong> Upload profile images for business profiles</li>
-            <li>✅ <strong>Visual Records:</strong> Create visual documentation for business operations</li>
-        </ul>
-        
-        <h2>🔒 2. Data Collection & Usage</h2>
-        <p>We respect your privacy. Here's how we handle your data:</p>
-        <ul>
-            <li><strong>Photos are stored securely</strong> on encrypted servers</li>
-            <li><strong>Images are used only within the MyBizCare application</strong></li>
-            <li><strong>No third-party sharing</strong> without explicit user consent</li>
-            <li><strong>Automatic data retention policies</strong> apply for inactive accounts</li>
-        </ul>
-        
-        <h2>🛡️ 3. Security Measures</h2>
-        <ul>
-            <li>End-to-end encryption for data transmission</li>
-            <li>Secure server infrastructure with regular security audits</li>
-            <li>Access controls and authentication protocols</li>
-            <li>Regular security updates and patches</li>
-        </ul>
-        
-        <h2>👥 4. User Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Access your personal data stored by MyBizCare</li>
-            <li>Request deletion of your photos and data</li>
-            <li>Export your business data at any time</li>
-            <li>Opt-out of non-essential data collection</li>
-            <li>Disable camera access in your device settings</li>
-        </ul>
-        
-        <h2>📝 5. Policy Updates</h2>
-        <p>We may update this privacy policy periodically. Significant changes will be notified through:</p>
-        <ul>
-            <li>In-app notifications</li>
-            <li>Email notifications (if provided)</li>
-            <li>Updated version on this page</li>
-        </ul>
-        
-        <div class="contact-info">
-            <h2>📧 Contact Information</h2>
-            <p>For privacy concerns, data requests, or questions:</p>
-            <p><strong>Email:</strong> [YOUR_EMAIL_HERE]@gmail.com</p>
-            <p><strong>Response Time:</strong> Within 48 hours</p>
-            <p><em>Please include "Privacy Policy" in your subject line.</em></p>
+        <div class="footer">
+            <p>&copy; 2024 MyBizCare. All rights reserved.</p>
+            <p>This Privacy Policy applies to the MyBizCare mobile application and related services.</p>
         </div>
-        
-        <p style="margin-top: 30px; text-align: center; color: #666; font-size: 14px;">
-            © 2024 MyBizCare. All rights reserved.
-        </p>
     </div>
 </body>
 </html>
